@@ -1,7 +1,7 @@
-
 FROM maven:3-eclipse-temurin-25 AS build
+ENV MAVEN_OPTS="-Xmx300m"
 COPY . .
-RUN mvn clean package -DskipTests -Dfile.encoding=UTF-8 -Dproject.build.sourceEncoding=UTF-8
+RUN mvn clean package -B -DskipTests -Dfile.encoding=UTF-8 -Dproject.build.sourceEncoding=UTF-8
 
 FROM eclipse-temurin:25-jdk-jammy
 ENV LANG=C.UTF-8
