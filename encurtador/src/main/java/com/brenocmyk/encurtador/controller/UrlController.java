@@ -18,7 +18,6 @@ public class UrlController {
 
     @Autowired
     private UrlService urlService;
-
     @Value("${APP_BASE_URL:http://localhost:8080}")
     private String baseUrl;
 
