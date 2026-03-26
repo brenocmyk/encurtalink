@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/encurtador" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/encurtador/src/main/java/com/brenocmyk/encurtador/controller" vcs="Git" />
   </component>
 </project>
